@@ -1,5 +1,6 @@
 package com.qa.average;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
@@ -48,8 +49,9 @@ public class AverageAPIApplicationTests {
 		int i = 0;
 		for (Double result : rawResults) {
 			formattedResults[i] = (double) result;
+			i++;
 		}
-		assertEquals(expected, formattedResults);
+		assertArrayEquals(expected, formattedResults, 0.001);
 	}
 
 }
