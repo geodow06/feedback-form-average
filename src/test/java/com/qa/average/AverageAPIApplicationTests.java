@@ -24,6 +24,7 @@ public class AverageAPIApplicationTests {
 	
 	@Test
 	public void serviceTest() {
+		service = new AverageServiceImpl();
 		double[] expected = {1.5, 2.5};
 		FeedbackFormTrainee form1 = new FeedbackFormTrainee();
 		FeedbackFormTrainee form2 = new FeedbackFormTrainee();

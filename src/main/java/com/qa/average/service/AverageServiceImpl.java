@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.qa.gateway.persistence.domain.FeedbackFormTrainee;
 
+@Service
 public class AverageServiceImpl implements AverageService {
 
 	@Override
